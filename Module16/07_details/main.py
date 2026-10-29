@@ -10,4 +10,16 @@ shop = [
         ['седло', 2700]
 ]
 
-# TODO здесь писать код
+
+item = input("Название детали: ")
+
+quantity = 0
+total_amount = 0
+
+for shop_index in shop:
+    if item == shop_index[0]:
+        quantity += 1
+        total_amount += shop_index[1]
+
+print(f"Кол-во деталей —  — {quantity}")
+print(f"Общая стоимость — {total_amount}")
